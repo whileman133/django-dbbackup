@@ -131,7 +131,7 @@ In-memory database aren't dumpable with it.
 SqliteBackupConnector
 ~~~~~~~~~~~~~~~~~
 
-The :class:`dbbackup.db.sqlite.SqliteBackupConnector` makes a copy of the SQLite database file using the ``.backup`` command, which is safe to execute with active connections to the database. It supports dumping in-memory databases by construction.
+The :class:`dbbackup.db.sqlite.SqliteBackupConnector` makes a copy of the SQLite database file using the ``.backup`` command, which is safe to execute while the database has ongoing/active connections. Additionally, it supports dumping in-memory databases by construction.
 
 MySQL
 -----
